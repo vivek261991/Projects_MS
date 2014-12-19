@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+    Student Name: Vivek Vaidyanathasubramanian
+    URL Address: http://omega.uta.edu/~vxv6079/project2/map.html
+-->
+<html lang="en">
+<head>
+<title>Web Mashup: Display House Prices on a Map</title>
+<meta charset="utf-8" />
+<script type="text/javascript" src="map.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js?v=3&sensor=false">
+	
+</script>
+</head>
+<body onload="loadmap();">
+	<p>
+		<input size="20" type="hidden" id="latbox" name="lat">
+	</p>
+	<p>
+		<input size="20" type="hidden" id="lngbox" name="lng">
+	</p>
+	<center>
+		<form>
+			<label>House address: <input type="text" id="fulladdress" /></label>
+			<label> <input type="button" onclick="sendRequest();"
+				value="Display Info" />
+			</label> <label> <input onclick="deleteMarkers();" type="reset"
+				value="Delete Markers" />
+			</label>
+		</form>
+		<br />
+		<div id="map-canvas" style="width: 600px; height: 500px"></div>
+	</center>
+	<br />
+	<div id="output">&nbsp;</div>
+</body>
+</html>
