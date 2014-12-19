@@ -1,4 +1,4 @@
-// Entered my zillow id below
+// zillow id below
 var zwsid = "X1-ZWz1b3ghoh2nm3_4eq90";
 var request = new XMLHttpRequest()
 var map;
